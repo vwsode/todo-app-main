@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 18px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Font settings */
+  --ff-JosefinSans: "Josefin Sans";
+
+  /* Colors */
+  --clr-white: hsl(0, 0%, 100%);
+
+  /* Light theme colors */
+  --clr-grayish-blue-light-100: hsl(0, 0%, 98%);
+  --clr-grayish-blue-light-200: hsl(236, 33%, 92%);
+  --clr-grayish-blue-light-300: hsl(233, 11%, 84%);
+  --clr-grayish-blue-light-400: hsl(236, 9%, 61%);
+  --clr-grayish-blue-light-500: hsl(235, 19%, 35%);
+
+  /* Dark theme colors */
+  --clr-grayish-blue-100: hsl(236, 33%, 92%);
+  --clr-grayish-blue-200: hsl(234, 39%, 85%);
+  --clr-grayish-blue-300: hsl(234, 11%, 52%);
+  --clr-grayish-blue-400: hsl(233, 14%, 35%);
+  --clr-grayish-blue-500: hsl(237, 14%, 26%);
+  --clr-grayish-blue-600: hsl(235, 24%, 19%);
+  --clr-grayish-blue-700: hsl(235, 21%, 11%);
+
+  --clr-primary: hsl(220, 98%, 61%);
+}
+
+body {
+  font-family: var(--ff-JosefinSans);
+  /* background-color: var(--clr-grayish-blue-700); */
+  color: var(--clr-white);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--clr-grayish-blue-500) var(--clr-grayish-blue-600);
+}

@@ -1,0 +1,57 @@
+.todo__filter {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &-items {
+    font-size: 14px;
+
+    font-weight: 500;
+  }
+  &-controls {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    @media screen and (max-width: 500px) {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: -70px;
+      left: 0;
+      justify-content: center;
+      border-radius: 4px;
+      button {
+        font-size: 18px;
+      }
+    }
+  }
+  //   &-clear {
+  //   }
+}
+
+.todo__filter {
+  &--dark {
+    .todo__filter-items {
+      color: var(--clr-grayish-blue-400);
+    }
+    .todo__filter-controls {
+      @media screen and (max-width: 500px) {
+        background-color: var(--clr-grayish-blue-600);
+      }
+    }
+  }
+  &--light {
+    .todo__filter-items {
+      color: var(--clr-grayish-blue-light-400);
+    }
+    .todo__filter-controls {
+      @media screen and (max-width: 500px) {
+        box-shadow: 0px 0px 20px 0px rgba(34, 60, 80, 0.2);
+        background-color: var(--clr-grayish-blue-light-100);
+      }
+    }
+  }
+}

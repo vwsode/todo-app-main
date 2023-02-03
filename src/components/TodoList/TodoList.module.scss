@@ -1,0 +1,88 @@
+.todo__list {
+  list-style: none;
+  max-height: 390px;
+  overflow-y: scroll;
+}
+.todo__item {
+  display: block;
+}
+
+.todo__list-message {
+  padding: 20px;
+  display: inline-block;
+  height: 64px;
+  user-select: none;
+  width: 100%;
+  color: var(--clr-grayish-blue-400);
+}
+
+.wrapper {
+  text-align: center;
+
+  &--dark {
+    border-bottom: 1px solid var(--clr-grayish-blue-500);
+    /* Chrome, Edge and Safari */
+    .todo__list::-webkit-scrollbar {
+      width: 10px;
+      width: 10px;
+    }
+    .todo__list::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background-color: var(--clr-grayish-blue-600);
+    }
+
+    .todo__list::-webkit-scrollbar-track:hover {
+      background-color: #b8c0c2;
+    }
+
+    .todo__list::-webkit-scrollbar-track:active {
+      background-color: #b8c0c2;
+    }
+
+    .todo__list::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: var(--clr-grayish-blue-500);
+    }
+
+    .todo__list::-webkit-scrollbar-thumb:hover {
+      background-color: #62a34b;
+    }
+
+    .todo__list::-webkit-scrollbar-thumb:active {
+      background-color: #62a34b;
+    }
+  }
+  &--light {
+    /* Chrome, Edge and Safari */
+    .todo__list::-webkit-scrollbar {
+      width: 10px;
+      width: 10px;
+    }
+    .todo__list::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background-color: var(--clr-grayish-blue-light-100);
+    }
+
+    .todo__list::-webkit-scrollbar-track:hover {
+      background-color: #b8c0c2;
+    }
+
+    .todo__list::-webkit-scrollbar-track:active {
+      background-color: #b8c0c2;
+    }
+
+    .todo__list::-webkit-scrollbar-thumb {
+      border-radius: 5px;
+      background-color: var(--clr-grayish-blue-200);
+    }
+
+    .todo__list::-webkit-scrollbar-thumb:hover {
+      background-color: #62a34b;
+    }
+
+    .todo__list::-webkit-scrollbar-thumb:active {
+      background-color: #62a34b;
+    }
+    border-bottom: 1px solid var(--clr-grayish-blue-light-200);
+  }
+}
