@@ -1,0 +1,39 @@
+.todo__add {
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &-input {
+        width: 100%;
+        outline: none;
+        border: none;
+        background: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        &::placeholder {
+            color: var(--clr-grayish-blue-300);
+        }
+    }
+    button {
+        svg {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+.todo__add {
+    &--dark {
+        background-color: var(--clr-grayish-blue-600);
+        .todo__add-input {
+            color: var(--clr-grayish-blue-200);
+        }
+    }
+    &--light {
+        .todo__add-input {
+            color: var(--clr-grayish-blue-light-500);
+        }
+        background-color: var(--clr-grayish-blue-light-100);
+    }
+}
